@@ -1,0 +1,26 @@
+{
+    "workbench.colorTheme": "Default Light+",
+    "window.zoomLevel": 1,
+    "editor.fontSize": 15,
+    "editor.fontFamily": "Hack, Consolas, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "Hack",
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.showExecutionMessage": false,
+    // "code-runner.runInTerminal": true,
+    "workbench.iconTheme": "vscode-icons",
+    "trailing-spaces.trimOnSave": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.roundedSelection": false,
+    "editor.rulers": [
+        100
+    ],
+    "macros": {
+        "commentLine": [
+            "editor.action.commentLine",
+            "cursorDown"
+        ]
+    },
+    "editor.multiCursorModifier": "ctrlCmd",
+    "explorer.confirmDelete": true
+}

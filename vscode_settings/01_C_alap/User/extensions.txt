@@ -1,0 +1,9 @@
+formulahendry.code-runner
+geddski.macros
+mechatroner.rainbow-csv
+mrmlnc.vscode-duplicate
+ms-vscode.cpptools
+shardulm94.trailing-spaces
+TabNine.tabnine-vscode
+vscode-icons-team.vscode-icons
+adammaras.overtype
