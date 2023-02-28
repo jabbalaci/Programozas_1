@@ -11,6 +11,6 @@ typedef char * string;
 //   Public Interface
 //
 
-string get_string(const string prompt);
+string get_string(const char* prompt);
 
 #endif    // PROG1_H
