@@ -1,0 +1,4 @@
+Írjunk két programot:
+
+* írassuk ki a 100-nál kisebb prímszámokat (ex1.c)
+* írassuk ki a 200-nál kisebb prímszámok összegét (ex2.c)
