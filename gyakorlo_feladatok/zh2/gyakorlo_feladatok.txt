@@ -1,0 +1,49 @@
+Svec Antal (demonstrátor) által összeállított feladatsor
+
+---
+
+Feladat 1: Átlókban lévő elemek összegének meghatározása
+--------------------------------------------------------
+Írjon egy programot, amely véletlenszámokkal feltölt egy 3x8-as mátrixot.
+A véletlenszámok a (43, 200) intervallumból kerüljenek ki, ahol az
+intervallum balról és jobbról is nyílt.
+A könnyebb tesztelés érdekében a véletlenszám-generátort a 9999 konstans
+értékkel inicializálja.
+
+A program hajtsa végre az alábbi lépéseket:
+
+- Töltse fel a mátrixot véletlenszámokkal.
+- Nyomtassa ki a mátrixot a képernyőre, szóközzel elválasztva az elemeket.
+- Számolja ki és írja ki a főátló és mellékátló elemeinek összegét.
+  (A mindkét átlóban szereplő középső elem kétszer lesz benne)
+
+Feladat 2: Oszlop elemeinek szorzata
+------------------------------------
+Írjon egy programot, amely véletlenszámokkal feltölt egy 11x5-ös mátrixot.
+A véletlenszámok a [-100, 99) intervallumból kerüljenek ki,
+ahol az intervallum balról zárt és jobbról nyílt.
+A könnyebb tesztelés érdekében a véletlenszám-generátort a 2420 konstans
+értékkel inicializálja.
+
+A program hajtsa végre az alábbi lépéseket:
+
+- Töltse fel a mátrixot véletlenszámokkal.
+- Kérjen be a felhasználótól egy oszlopszámot,
+  és az adott oszlop elemeit szorozza össze,
+  majd írja ki az eredményt.
+
+Feladat 3: Mátrix transzponálása
+--------------------------------
+Írjon egy programot, amely véletlenszámokkal feltölt egy
+4x4-es kvadratikus (négyzetes) mátrixot.
+A véletlenszámok a (-1000, 1000) intervallumból kerüljenek ki.
+A könnyebb tesztelés érdekében a véletlenszám-generátort a 1000 konstans
+értékkel inicializálja.
+
+A program hajtsa végre az alábbi lépéseket:
+
+- Töltse fel a mátrixot véletlenszámokkal.
+- Írja ki az eredeti mátrixot.
+- Transzponálja a mátrixot és írja ki a képernyőre.
+
+A transzponálást egy eljárás segítségével oldja meg.
