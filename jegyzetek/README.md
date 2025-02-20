@@ -20,3 +20,7 @@ Tartalom
 * `c_style_guide.pdf`
 
   Tippek a szép forráskódért.
+
+* `Adattipus, konstans, valtozo, kifejezes.pdf`
+  + File Péter volt hallgató által kidolgozott államvizsga tétel
+  + Téma: Programozás 1
