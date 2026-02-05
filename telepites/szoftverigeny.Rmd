@@ -1,0 +1,126 @@
+Utolsó frissítés: 2026. jan. 7.
+
+# Linux Mint 22.2 (Cinnamon)
+
+## általános
+
+    $ sudo apt install mc konsole tmux gedit htop git neovim micro firefox xsel xclip pipx
+
+    $ sudo apt install qttools5-dev-tools qttools5-dev pyqt5-dev-tools
+
+    $ sudo apt install zsh fish
+
+    $ sudo apt install datamash
+
+    $ sudo apt install xfce4-clipman
+
+## VS Code
+
+lásd https://linuxiac.com/how-to-install-vs-code-on-linux-mint/
+
+    $ sudo apt install software-properties-common apt-transport-https wget gpg
+    $ wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+    $ sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+    $ sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+    $ sudo apt update
+    $ sudo apt install code
+
+## Midnight Commander beállítás
+
+A `~/.bashrc` állomány végére szúrjuk be:
+
+    # my settings
+    alias mc=". /usr/share/mc/bin/mc-wrapper.sh"
+
+(Ez azt eredményezi, hogy ha elindítjuk az mc-t, majd elnavigálunk egy
+könyvtárba és kilépünk, akkor abban a mappában találjuk magunkat,
+ahol kiléptünk.)
+
+## Python 3
+
+    $ sudo apt install python3-pip pipx
+
+    $ pipx install uv
+
+## C fejlesztés
+
+    $ sudo apt install build-essential
+    $ sudo apt install gcc clang valgrind
+
+### style50
+
+    $ sudo apt install astyle
+    $ sudo apt install pipx
+    $ pipx install style50
+
+Utána a PATH-t bővítsük ki. A `~/.bashrc` végére szúrjuk be:
+
+    export PATH=$PATH:$HOME/.local/bin
+
+## Fortran
+
+    $ sudo apt install gfortran
+
+## Lua
+
+    $ sudo apt install lua5.4
+
+## D Lang.
+
+lásd https://dlang.org/download.html
+
+    $ wget https://downloads.dlang.org/releases/2.x/2.111.0/dmd_2.111.0-0_amd64.deb
+    $ sudo dpkg -i dmd_2.111.0-0_amd64.deb
+    $ rm dmd_2.111.0-0_amd64.deb
+
+dfmt telepítése (lásd https://github.com/dlang-community/dfmt):
+
+    $ dub run dfmt -- -h
+
+Utána a PATH-t bővítsük ki:
+
+    $ export PATH=$PATH:$HOME/.dub/packages/dfmt/0.15.2/dfmt/bin
+
+## Egy kis tisztogatás a végére
+
+    $ sudo apt autoremove
+    $ sudo apt clean
+    $ sudo apt autoclean
+
+-------------------------------------------------
+
+# Windows 11
+
+## általános
+
+* Firefox
+* Visual Studio Code
+  https://code.visualstudio.com/Download
+  innen a 64 bites verziót tegyük fel
+* Total Commander
+  https://www.ghisler.com/
+  Download -> 64 bit version only
+* Notepad++
+  https://notepad-plus-plus.org/downloads/
+
+## Python fejlesztés
+
+* https://www.python.org/ meglátogatása
+  Downloads -> Windows fül
+* Stable Releases alatt Download Windows installer (64-bit)
+  töltsük le, indítsuk el a telepítőt.
+  Javasolt verzió: 3.14
+* "add python.exe to PATH" legyen bekapcsolva
+  Customize Installation módban tegyük fel
+* Optional features alatt a `pip` legyen bekapcsolva
+* telepítés ajánlott helye: `C:\Python314`
+
+## C fejlesztés
+
+* A https://www.equation.com/servlet/equation.cmd?fa=fortran oldalon
+  töltsük le a legfrissebb 64-bites verziót.
+  Ez jelenleg a gcc-15.2.0-64.exe .
+  Direkt link: https://www.equation.com/ftpdir/gcc/gcc-15.2.0-64.exe
+* Futtassuk és telepítsük. Alapból a `C:\MinGW` könyvtárba akarja kibontani magát. Fogadjuk el.
+* A telepítő beteszi a PATH-ba a `C:\MinGW\bin` mappát. Azért ellenőrizzük le,
+  hogy tényleg így van-e.
